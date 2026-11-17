@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distro Outfitku</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Distro Outfit</h1>
+  </header>
+
+  <section class="produk">
+    <article class="produk">
+      <img src="img/WhatsApp Image 2026-11-17 at 13.39.40.jpeg" alt="Kaos Hitam Polos" />
+      <h3>Kaos Hitam Polos</h3>
+      <p>Rp 75.000</p>
+    </article>
+
+    <article class="produk">
+      <img src="img/WhatsApp Image 2026-11-17 at 13.39.28.jpeg" alt="Kemeja Flanel" />
+      <h3>Kemeja Flanel</h3>
+      <p>Rp 145.000</p>
+    </article>
+
+    <article class="produk">
+      <img src="img/WhatsApp Image 2026-11-17 at 13.39.15.jpeg" alt="Hoodie" />
+      <h3>Hoodie</h3>
+      <p>Rp 185.000</p>
+    </article>
+  </section>
+
+  <form id="formPesan" action="#" method="get">
+    <h2>FORM PEMESANAN</h2>
+
+    <div class="grup-input">
+      <label for="nama">Nama Pemesan:</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        required
+        minlength="3"
+        maxlength="50"
+      />
+    </div>
+
+    <div class="grup-input">
+      <label for="hp">Nomor HP:</label>
+      <input
+        type="tel"
+        id="hp"
+        name="hp"
+        required
+        pattern="[0-9]{10,13}"
+        title="Isi 10 sampai 13 angka"
+      />
+    </div>
+
+    <div class="grup-input">
+      <label for="produk">Produk:</label>
+      <select id="produk" name="produk" required>
+        <option value="">-- Pilih --</option>
+        <option value="Kaos Hitam Polos">Kaos Hitam Polos</option>
+        <option value="Kemeja Flanel">Kemeja Flanel</option>
+        <option value="Hoodie">Hoodie</option>
+      </select>
+    </div>
+
+    <div class="grup-input">
+      <label for="jumlah">Jumlah:</label>
+      <input
+        type="number"
+        id="jumlah"
+        name="jumlah"
+        required
+        min="1"
+        max="20"
+      />
+    </div>
+
+    <div class="grup-input">
+      <span>Metode Bayar:</span>
+      <div class="opsi-radio">
+        <input
+          type="radio"
+          id="transfer"
+          name="bayar"
+          value="Transfer"
+          required
+        />
+        <label for="transfer">Transfer</label>
+
+        <input
+          type="radio"
+          id="cod"
+          name="bayar"
+          value="COD"
+        />
+        <label for="cod">COD</label>
+      </div>
+    </div>
+
+    <div class="grup-input">
+      <label for="alamat">Alamat:</label>
+      <textarea
+        id="alamat"
+        name="alamat"
+        rows="4"
+        required
+        minlength="10"
+        maxlength="200"
+      ></textarea>
+    </div>
+
+    <button type="submit">Pesan</button>
+  </form>
+
+  <footer>
+    <p>Kontak toko: 0895339134251 | Jl. Soekarno Hatta No. 12</p>
+  </footer>
+
+</body>
+</html>
